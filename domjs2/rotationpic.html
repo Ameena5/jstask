@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<div>   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTka2N3M9EPeRzfoTFYuOLL8OZqbL0Q0Mqemg&s" id="img">
+</div>
+<button onclick="hello()">submit90deg</button>
+<button onclick="hii()">submit120deg</button> 
+<button onclick="hello1()">submit180deg</button> 
+<button onclick="hello2()">submit260deg</button> 
+<button onclick="hello3()">submit300deg</button> 
+
+<button onclick="hello4()">submit0deg</button> 
+
+
+    
+    <script>
+
+
+var img=document.createElement("img")
+//  img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTka2N3M9EPeRzfoTFYuOLL8OZqbL0Q0Mqemg&s"
+//  img.width="100"
+ 
+//  document.body.append(img)
+ 
+
+ function hello(){
+//     if(img){
+//         rotate:90
+//     }
+const rotated=document.getElementById("img")
+
+ if(rotated.style.transform="rotate(90deg)"){
+    console.log(img)
+ }
+  
+}
+function hii(){
+   const rotated=document.getElementById("img")
+   if(    rotated.style.transform="rotate(120deg)"){
+    console.log(img)
+ }
+
+}
+function hello1(){
+   const rotated=document.getElementById("img")
+
+ if(rotated.style.transform="rotate(80deg)"){
+    console.log(img)
+
+ }}
+
+ function hello2(){
+   const rotated=document.getElementById("img")
+
+ if(rotated.style.transform="rotate(260deg)"){
+    console.log(img)
+
+ }}
+ function hello3(){
+   const rotated=document.getElementById("img")
+
+ if(rotated.style.transform="rotate(300deg)"){
+    console.log(img)
+
+ }}
+ 
+ function hello4(){
+   const rotated=document.getElementById("img")
+
+ if(rotated.style.transform="rotate(0deg)"){
+    console.log(img)
+
+ }}
+ 
+
+
+
+
+   </script>
+</body>
+</html>

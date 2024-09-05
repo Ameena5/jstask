@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     #picture {
+            display:inline;
+              width:300px;
+              height:300px
+     } 
+     
+     img{
+        width:100px;
+        
+     }
+     /* div{
+        flex-direction: column;
+     } */
+      #allimg{
+         display:grid;
+        
+     }
+     #main{
+      display: flex;
+     }
+
+    </style>
+</head>
+<body>
+   <div id="main">
+      <div id="allimg"><img src="https://m.media-amazon.com/images/I/510nvXdiOpL._AC_UY1100_.jpg"  onmouseover="fun1()"  id="pic1">
+         <img src="https://ae01.alicdn.com/kf/H6a37f584e1904671afdc529dcd0b50e1e.png"  onmouseover="fun2()" id="pic2">
+         <img src="https://i.pinimg.com/736x/83/f4/dc/83f4dc2a0b9a12b12722edbb533da49d.jpg"  onmouseover="fun3()" id="pic3" >
+         <img src="https://m.media-amazon.com/images/I/71MtG2vKTgL._AC_UF894,1000_QL80_.jpg"  onmouseover="fun4()" id="pic4">
+         <img src="https://img.fruugo.com/product/7/12/780012127_max.jpg" onmouseover="fun5()"  id="pic5">
+         </div>
+          <div>
+             <img src=" "  style="border: 1px solid blue" id="picture" >
+   
+          </div>
+   
+      
+   </div>
+    <script>
+       
+       function fun1(){
+
+        var img__e=document.getElementById("picture")
+        var img__pic=document.getElementById("pic1")
+          
+        img__e.setAttribute("src",img__pic.src)
+
+       }
+       function fun2(){
+
+      var img__e=document.getElementById("picture")
+      var img__pic=document.getElementById("pic2")
+  
+      img__e.setAttribute("src",img__pic.src)
+
+       }
+       function fun3(){
+
+     var img__e=document.getElementById("picture")
+    var img__pic=document.getElementById("pic3")
+  
+     img__e.setAttribute("src",img__pic.src)
+
+        } 
+        function fun4(){
+
+     var img__e=document.getElementById("picture")
+     var img__pic=document.getElementById("pic4")
+  
+         img__e.setAttribute("src",img__pic.src)
+
+          }
+          function fun5(){
+
+     var img__e=document.getElementById("picture")
+    var img__pic=document.getElementById("pic5")
+  
+      img__e.setAttribute("src",img__pic.src)
+
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

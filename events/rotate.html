@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+           image=document.createElement("img")
+           image.src="https://cdn.firstcry.com/education/2022/12/12101916/Flower-Names-In-English-For-Kids.jpg"
+           image.style.width="200px"
+
+           image1=document.createElement("img")
+           image1.src="https://wallup.net/wp-content/uploads/2019/10/605929-nature-flower-beautiful-flowers-plant-colorful-petals.jpg"
+           image1.style.width="200px"
+           image2=document.createElement("img")
+           image2.src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg"
+           image2.style.width="200px"
+           image3=document.createElement("img")
+           image3.src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/images/print-edition/20180818_STP004_0.jpg"
+           image3.style.width="200px"
+           image4=document.createElement("img")
+           image4.src="https://t3.ftcdn.net/jpg/00/95/29/28/360_F_95292880_GfqmxNb4u8ZxG18i2jkLt6gkAvl8xdz3.jpg"
+           image4.style.width="200px"
+
+
+            button=document.createElement("button")
+                button.innerText="click here"
+                button1=document.createElement("button")
+                button1.innerText="click here"
+                button2=document.createElement("button")
+                button2.innerText="click here"
+                button3=document.createElement("button")
+                button3.innerText="click here"
+                button4=document.createElement("button")
+                button4.innerText="click here"
+            
+                 
+                button.addEventListener ("click", function(){
+                     
+                    image.style.transform="rotate(120deg)"
+                    document.body.append(image)
+                })
+                button1.addEventListener ("click", function(){
+                     
+                     image1.style.transform="rotate(320deg)"
+                     document.body.append(image1)
+ 
+                 })
+                 button2.addEventListener ("click", function(){
+                     
+                     image2.style.transform="rotate(260deg)"
+                     document.body.append(image2)
+ 
+                 })
+                 button3.addEventListener ("click", function(){
+                     
+                     image3.style.transform="rotate(180deg)"
+                     document.body.append(image3)
+ 
+                 })
+                 button4.addEventListener ("click", function(){
+                     
+                     image4.style.transform="rotate(90deg)"
+                     document.body.append(image4)
+ 
+                 })
+               
+                
+                document.body.append(button,button1,button2,button3,button4)
+
+    </script>
+</body>
+</html>

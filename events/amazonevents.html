@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+
+
+            
+
+
+    <script>
+        div1=document.createElement("div")
+        img=document.createElement("img")  
+        img.src="https://replicate.delivery/mgxm/0958ab0c-8d26-45f8-a5f1-a27a1f2259cc/baby.jpg" 
+        img.style.width="200px"
+        img2=document.createElement("img")
+        img2.src="https://png.pngtree.com/background/20231030/original/pngtree-3d-renderings-of-eco-friendly-concepts-picture-image_5799732.jpg"
+        img2.style.width="200px"
+        img3=document.createElement("img")
+        img3.src="https://dpwalay.net/wp-content/uploads/2023/06/whatsapp-cute-dp-images-10.jpg"
+        img3.style.width="200px"
+        div1.append(img,img2,img3)
+
+        div1.style.display="flex"
+        div1.style.flexDirection="column"
+        document.body.appendChild(div1)
+
+        var div2=document.createElement("div")
+        div2.style.border="2px solid red"
+        div2.style.width="200px"
+        div2.style.height="200px"
+
+
+        document.body.append(div2)
+
+
+        divmain=document.createElement("div")
+        divmain.style.display="flex"
+        divmain.append(div1,div2)
+        document.body.appendChild(divmain)
+      
+          
+        function name(img){
+              img.onmouseover = function(){
+                div2.append(img)
+              }
+              img.onmouseout=function(){
+                div1.append(img)
+                img.style.overflow="none"
+              }
+        }
+        name(img)
+        name(img2)
+        name(img3)
+     
+    </script>
+</body>
+</html>

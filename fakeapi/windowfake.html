@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" id="img">
+     <h1 id="title"> </h1>
+     <h1 id="price">
+
+     </h1>
+
+    <script>
+        var data=localStorage.getItem("single")
+        var a1=JSON.parse(data)
+        console.log(a1)
+
+        var img=document.getElementById("img")
+        img.setAttribute("src" ,a1["image"])
+        img.style.width="100px"
+
+        var title=document.getElementById("title")
+        title.innerText=a1["title"]
+        var price=document.getElementById("price")
+        price.innerText=a1["price"]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        
+        h4=document.createElement("h4")
+        h4.innerText="TO DO LIST"
+        h4.style.textAlign="center"
+        h4.style.color="blue"
+
+
+        
+         edit_btn=document.createElement("button")
+         edit_btn.innerText="enter the values"
+        edit_btn.addEventListener("click",function(){
+                  
+                  var inp = prompt("enter the edit value")
+                  li.innerText=inp;
+                  edit_btn.remove();
+            })
+
+        document.body.append(h4,edit_btn)
+ 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
